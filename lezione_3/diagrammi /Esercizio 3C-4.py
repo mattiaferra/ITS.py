@@ -1,5 +1,5 @@
 
-nome_animale = input("inserisci il nome di un animale :")
+nome_animale = str(input("inserisci il nome di un animale:"))
 
 match nome_animale:
 
