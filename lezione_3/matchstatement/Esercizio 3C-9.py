@@ -16,11 +16,11 @@ match tupla_cordinate:
 
         print("il punto si trova nell' origine")
 
-    case (x,y) if y == 0:
+    case (x,0):
 
         print("Il punto si trova sull'asse X.")
 
-    case (x,y) if x == 0:
+    case (0,y):
 
         print("Il punto si trova sull'asse Y.")
 
@@ -39,5 +39,8 @@ match tupla_cordinate:
     case (x, y) if x > 0 and y < 0:
 
         print("Il punto si trova nel quarto quadrante")
+
+
+
 
 
