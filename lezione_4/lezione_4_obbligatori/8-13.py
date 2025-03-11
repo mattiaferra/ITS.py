@@ -1,10 +1,10 @@
-def  build_profile(profile):
+def  build_profile(nome ,cognome ,eta ,capelli ,obby):
     
-    print(profile)
+    return f"{nome} {cognome}, età {eta}, capelli {capelli}, obby {obby}"
     
 
-parametri = {"nome": "Mattia" , "cognome": "Ferrandino" , "colore occhi" : "marroni" , "altezza": "1,74" , "obby" : "calcetti"}
+profilo = build_profile("Mattia","Ferrandino" ,"19" ,  "castani" , "calcetti")
 
-build_profile(parametri)
+print(profilo)
     
     
