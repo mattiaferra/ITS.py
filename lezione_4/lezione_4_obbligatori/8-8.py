@@ -23,6 +23,7 @@ while True :
     
     esci = input("vuoi inserire un altro album ? :").lower()
     
+    
     if esci == "exit":
         print(album_1)
         break
