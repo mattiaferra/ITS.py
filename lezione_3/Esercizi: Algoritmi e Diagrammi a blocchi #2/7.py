@@ -9,10 +9,11 @@ if scelta == "SI" :
     while True :
 
         voto : int = int(input("inserisci un voto : "))
-        scelta = input("vuoi continuare a inserire voti (SI | NO) : ").upper()
+        
 
         if voto > 0 :
 
+            scelta = input("vuoi continuare a inserire voti (SI | NO) : ").upper()
             cont = cont + 1
             somma = somma + voto
 
@@ -24,18 +25,21 @@ if scelta == "SI" :
         if scelta == "NO" :
 
             break
-    
+
+while True:
+
+    if cont > 0 :
              
-        elif voto == "":
+        media = somma/cont
+        print("\n------------------------------------")
+        print(f"media = {media}")
+        break
+
+    else :
     
-            print("nessun voto inserito")
+     print("nessun voto inserito")
 
 
-if cont > 0 :
-             
-    media = somma/cont
-    print("\n------------------------------------")
-    print(f"media = {media}")
             
 
         
