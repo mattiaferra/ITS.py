@@ -93,7 +93,7 @@ risultato1 = sumInRange(5,10)
 print("-------")
 risultato2 = sumInRange(10,5)'''
 
-
+''''
 
 def sumInRange(a: int, b: int):
     
@@ -110,6 +110,6 @@ print(risultato1)
 print("-------")
 
 risultato2 = sumInRange(10, 5)
-print(risultato2)
+print(risultato2)'''
 
-        
+
