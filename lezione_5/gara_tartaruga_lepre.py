@@ -5,6 +5,7 @@ traguardo = 70
 posizione_tartaruga = 1 
 posizione_lepre = 1
 
+
 def movimento_tartaruga(posizione):
 
     mossa = random.randint(1,10)
@@ -44,6 +45,48 @@ def movimento_lepre(posizione):
     return max(1,posizione)
 
 
-def pista()
+def pista(posizione_tartaruga,posizione_lepre):
 
+
+    percorso = ["_"]*traguardo
+
+    if posizione_tartaruga == percorso:
+
+        percorso[posizione_tartaruga-1]
+
+    elif posizione_lepre == percorso :
+
+        percorso[posizione_lepre-1]
+
+    else :  
+
+        print("OUCH!!!")
+
+
+    return percorso,posizione_tartaruga,posizione_lepre
+
+
+
+print("'BANG !!!!! AND THEY'RE OFF !!!!!'")
+
+
+while True:
+
+    i = 0
+    tartaruga = movimento_tartaruga(posizione_tartaruga)
+    lepre = movimento_lepre(posizione_lepre)
     
+    pista()
+    i += 1
+
+    if i == traguardo and tartaruga == traguardo:
+        break
+        print("TORTOISE WINS! || VAY!!!")
+    
+    elif i == traguardo and lepre == traguardo:
+        break
+        print("HARE WINS || YUCH!!!")
+
+    else:
+        break
+        print("IT'S A TIE")
