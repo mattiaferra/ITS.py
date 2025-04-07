@@ -1,0 +1,47 @@
+.sfondo {
+    background-color: gray;
+    align-items: center;
+ 
+}
+
+h1 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6em
+    
+}
+
+h2 {
+
+    text-align: left;
+    font-style: normal;
+    font-size: 4em
+
+
+}
+.product {
+
+    width: 50%; /* Puoi aumentare o diminuire a seconda delle tue preferenze */
+    margin: 2% 0%; /* Ridotto il margine per ottimizzare lo spazio */
+    text-align: center; /* Centra il contenuto */
+    
+}
+
+.product img {
+    
+    width: 50%; /* L'immagine occuperà tutta la larghezza del contenitore */
+    height:auto; /* Mantieni le proporzioni originali */
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; /* Centra l'immagine all'interno del contenitore */
+}
+
+
+
+    
+
+    
+    
+
+
+  
