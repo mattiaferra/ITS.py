@@ -1,0 +1,89 @@
+body {
+    background-color: #b7ebaf;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: white;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+header img {
+    width: 100%;
+}
+
+nav {
+    background-color: #d3d3d3;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 150px;
+}
+
+.sidebar img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.content {
+    flex: 1;
+}
+
+.intro {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.book {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.book img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.book-info {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 1;
+}
+
+.book-info div {
+    margin-bottom: 5px;
+}
+
+.book-info .more {
+    text-align: right;
+    font-style: italic;
+}
