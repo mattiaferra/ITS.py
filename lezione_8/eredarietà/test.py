@@ -1,5 +1,5 @@
-from persona import Persona
-from studente import Studente
+from lezione_8.eredarietà.persona import Persona
+from lezione_8.eredarietà.studente import Studente
 
 
 # creo un oggetto p della classe Persona

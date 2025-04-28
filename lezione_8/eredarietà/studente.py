@@ -1,5 +1,5 @@
 # Dal modulo persona.py importo la classe Persona
-from persona import Persona
+from lezione_8.eredarietà.persona import Persona
 
 # La classe Studente eredita dalla classe Persona
 class Studente(Persona):
