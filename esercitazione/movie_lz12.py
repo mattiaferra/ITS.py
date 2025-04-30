@@ -24,7 +24,7 @@ class MovieCatalog:
           return list(self.catalog.keys())
             
 
-    def get_movie_by_director(self, director_name : str) -> dict[str,list[str]]:
+    def get_movies_by_director(self, director_name : str) -> dict[str,list[str]]:
           
             if director_name in self.catalog:
                   return self.catalog[director_name]
@@ -32,7 +32,7 @@ class MovieCatalog:
                   return "il regista non è nel catalogo"  
 
 
-    def search_movie_by_title(self, title : str):
+    def search_movies_by_title(self, title : str):
             result: dict[str, list[str]] = {}
 
             for director, movies in self.catalog.items():
@@ -52,5 +52,19 @@ class MovieCatalog:
                  return "Nessun film trovato" 
 
 
+
+
+
+catalog = MovieCatalog()
+
+catalog.add_movie("Steven Spielberg", ["I Goonies", "Ritorno al futuro"])
+catalog.add_movie("Quentin Tarantino", ["Pulp Fiction", "Kill Bill"])
+catalog.add_movie("Steven Spielberg", ["E.T. l'extra-terrestre"])
+
+print(catalog.remove_movie("Steven Spielberg", "casper")) # Rimuove il film casper di Steven Spielberg
+print(catalog.list_directors()) # Visualizzo i registi
+print(catalog.get_movies_by_director("Steven Spielberg")) # Cerco un film di Steven Spielberg
+print(catalog.search_movies_by_title("ritorno")) # Cerco un film con ritorno nel titolo
+print(catalog.search_movies_by_title("potter")) # Cerco un film con potter nel titolo
 
                 
