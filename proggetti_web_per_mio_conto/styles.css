@@ -86,11 +86,51 @@ body {
   color: #4b2e1e;
 }
 
+.about-section {
+  position: relative;
+  background: url("img/interni.png") center/cover no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  height: 100vh; /* Fa sì che la sezione occupi l'intera altezza della finestra */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.4); /* Sfondo bianco semi-trasparente per l'effetto sfocato */
+  backdrop-filter: blur(8px); /* Effetto sfocato */
+}
+
+.about-content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.about-content h2 {
+  font-size: 42px;
+  color: #4b2e1e;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+
+/* Sezione Prenotazioni */
 .booking-section {
   background-color: #f3e7d3;
   padding: 80px 20px;
-  margin-top: 60px; /* distacco più fluido dalla sezione precedente */
-  border-top: 2px solid #d5b894; /* opzionale, se vuoi un effetto visivo di divisione */
+  margin-top: 60px;
+  border-top: 2px solid #d5b894;
 }
 
 .booking-content {
