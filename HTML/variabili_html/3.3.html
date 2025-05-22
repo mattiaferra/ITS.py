@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversione Secondi</title>
+</head>
+<body>
+
+
+  <div id="risultato"></div>
+
+  <script>
+    
+    var secondi = prompt("Inserisci il numero di secondi:");
+
+    
+    var secondiinteri= parseInt(secondi);
+
+    var ore = parseInt(secondiinteri / 3600);
+
+    
+    var minuti = parseInt((secondiinteri % 3600) / 60);
+
+    
+    var secondi = secondiinteri % 60;
+
+   
+    document.getElementById("risultato").innerHTML =  ore + " ore, " + minuti + " minuti e " + secondi + " secondi";
+  </script>
+
+</body>
+</html>

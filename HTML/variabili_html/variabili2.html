@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+<body>
+    <div id="risultato">  </div>
+    <div id="esito">   </div>
+    <script>
+
+
+        var nome = prompt("inserisci il tuo nome ");
+
+        
+
+        document.getElementById("risultato").innerHTML = "Ciao " + nome;
+
+        var num1 = prompt("inserisci un numero "); 
+        var num2 = prompt("inserisci un altro numero ");
+
+        //trasformo l'imput da string a int
+        var n1 = parseInt(num1); 
+        var n2 = parseInt(num2); 
+
+        document.getElementById("esito").innerHTML = "la somma " +(n1 + n2);
+
+    </script>
+</body>
+</html>

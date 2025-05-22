@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+<body>
+
+    <div id="etapersona">  </div>
+    <div id="foranni100">   </div>
+
+    <script>
+
+
+      var anno_attuale = 2025;
+      var anno_mio = prompt("inserire anno di nascita : ");
+
+
+       var an = parseInt(anno_mio);
+       var aa = parseInt(anno_attuale);
+
+       var eta_persona = aa - an
+       var anni100 = 100 - eta_persona;
+
+       document.getElementById("etapersona").innerHTML = "La tua età = " + eta_persona;
+       document.getElementById("foranni100").innerHTML = "Anni che servono ad arrivare a 100 :  " + anni100;
+
+
+
+
+
+       
+
+
+    </script>
+</body>
+</html>

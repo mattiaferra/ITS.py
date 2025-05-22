@@ -28,13 +28,52 @@
       <h1>Il Cavaliere - Pizzeria Ristorante</h1>
     </div>
   </main>
+  <br>
+  <br>
+  <br>
+  <section class="sezione-cucina">
+    <div class="intestazione-cucina">
+      <img src="img/cucina.png" alt="Logo Cucina" class="img-tonda">
+      <h2>La Nostra Cucina</h2>
+    </div>
 
-  <section class="about-section">
+    <br>
+    <br>
+  
+    <div class="container-cards">
+      <div class="card">
+        <img src="img/carbonara.jpeg" alt="Cucina Romana">
+        <div class="card-content">
+          <h3>Cucina Romana</h3>
+          <p>Piatti della tradizione romana, ricchi di storia e sapore.</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="img/pizzarom.jpeg" alt="Pizza Artigianale">
+        <div class="card-content">
+          <h3>Pizze Artigianali</h3>
+          <p>Impasto a lunga lievitazione e cottura in forno a legna.</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="img/antipasti.jpg" alt="Antipasti della Casa">
+        <div class="card-content">
+          <h3>Antipasti della Casa</h3>
+          <p>Un mix di sfizi e sapori per iniziare al meglio il pasto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<br>
+<br>
+<br>
+  <section class="about-section scroll-reveal">
     <div class="about-content">
-      <h2>Chi siamo</h2>
-      <p>
-        Benvenuti a **Il Cavaliere**, un ristorante dove tradizione e passione si incontrano per offrirvi un’esperienza culinaria unica. 
-        La nostra cucina nasce dall’amore per gli ingredienti di alta qualità e dalla volontà di creare piatti autentici che raccontano la storia del nostro territorio.
+      <h2 data-delay="0.2s">Chi siamo</h2>
+      <p data-delay="0.4s">
+        Benvenuti a Il Cavaliere, un ristorante-pizzeria a conduzione familiare che da anni rappresenta un punto di riferimento nel cuore del quartiere Portuense a Roma. La nostra missione è offrire un'esperienza culinaria autentica, combinando la tradizione della cucina italiana con un'accoglienza calorosa e un ambiente conviviale.
       </p>
     </div>
   </section>
@@ -52,5 +91,21 @@
       </div>
     </div>
   </section>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.2 // Quando il 20% dell'elemento è visibile
+    });
+  
+    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+  </script>
+  
+
 </body>
 </html>
