@@ -7,39 +7,38 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header>
-    <nav class="navbar">
+    <div class="navbar">
       <a href="#" class="logo">
-        <img src="img/creami un logo con un cavaliere con un cappello da chef e una cucchiarella in mano (1).png" alt="">
+        <img src="img/creami un logo con un cavaliere con un cappello da chef e una cucchiarella in mano (1).png" alt="Logo Il Cavaliere" />
         Il Cavaliere
       </a>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Prenotazioni</a></li>
-        <li><a href="#">Contatti</a></li>
-      </ul>
-    </nav>
+      <a href="#">Home</a>
+      <a href="#">Chi siamo</a>
+      <a href="#">Menu</a>
+      <a href="#">Contatti</a>
+    </div>
   </header>
 
-  <main>
-    <div class="center-content">
-      <img src="img/Marrone Beige Vintage Retrò Illustrato Pasta Logo.png" alt="Logo Il Cavaliere" />
-      <h1>Il Cavaliere - Pizzeria Ristorante</h1>
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-title-container">
+        <img src="img/creami un logo con un cavaliere con un cappello da chef e una cucchiarella in mano (1).png" 
+             alt="Logo Il Cavaliere" 
+             class="hero-logo">
+        <h1>Benvenuti al ristorante Il Cavaliere</h1>
+      </div>
+      <button onclick="window.location.href='#menu'">Visita il nostro menu</button>
     </div>
-  </main>
-  <br>
-  <br>
-  <br>
+  </div>
+
   <section class="sezione-cucina">
     <div class="intestazione-cucina">
-      <img src="img/cucina.png" alt="Logo Cucina" class="img-tonda">
+      <img src="img/creami un logo con un cavaliere con un cappello da chef e una cucchiarella in mano (1).png" alt="Logo Cucina" class="img-tonda">
       <h2>La Nostra Cucina</h2>
     </div>
 
-    <br>
-    <br>
-  
     <div class="container-cards">
       <div class="card">
         <img src="img/carbonara.jpeg" alt="Cucina Romana">
@@ -48,7 +47,7 @@
           <p>Piatti della tradizione romana, ricchi di storia e sapore.</p>
         </div>
       </div>
-  
+
       <div class="card">
         <img src="img/pizzarom.jpeg" alt="Pizza Artigianale">
         <div class="card-content">
@@ -56,7 +55,7 @@
           <p>Impasto a lunga lievitazione e cottura in forno a legna.</p>
         </div>
       </div>
-  
+
       <div class="card">
         <img src="img/antipasti.jpg" alt="Antipasti della Casa">
         <div class="card-content">
@@ -66,9 +65,7 @@
       </div>
     </div>
   </section>
-<br>
-<br>
-<br>
+
   <section class="about-section scroll-reveal">
     <div class="about-content">
       <h2 data-delay="0.2s">Chi siamo</h2>
@@ -78,7 +75,6 @@
     </div>
   </section>
 
-  
   <section class="booking-section">
     <div class="booking-content">
       <div class="booking-text">
@@ -100,12 +96,11 @@
         }
       });
     }, {
-      threshold: 0.2 // Quando il 20% dell'elemento è visibile
+      threshold: 0.2
     });
-  
+
     document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
   </script>
-  
 
 </body>
 </html>

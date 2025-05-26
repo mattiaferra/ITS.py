@@ -36,7 +36,7 @@ html, body {
   }
   
   .hero {
-    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80');
+    background-image: url('img/cucina.png');
     height: calc(100vh - 50px);
     background-position: center;
     background-repeat: no-repeat;
