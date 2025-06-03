@@ -90,7 +90,7 @@ body {
 }
 
 .hero-logo {
-  height: 80px;
+  height: 200px;
   width: auto;
   filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
 }

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Cavaliere - Ristorante Romano</title>
+    <style>
+        /* CSS Stile basato sulle immagini fornite */
+        :root {
+            --primary-color: #222222;
+            --secondary-color: #555555;
+            --accent-color: #8B0000;
+            --light-color: #f8f8f8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+            color: var(--primary-color);
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+            font-weight: normal;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem;
+            color: var(--accent-color);
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .divider {
+            height: 1px;
+            background-color: #ddd;
+            margin: 2rem auto;
+            width: 80%;
+        }
+        
+        section {
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .menu-category {
+            margin-bottom: 3rem;
+        }
+        
+        .menu-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .booking-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        .booking-form input, 
+        .booking-form select, 
+        .booking-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+        }
+        
+        .booking-form button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .booking-form button:hover {
+            background-color: #6d0000;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        /* Nascondi tutte le sezioni tranne quella attiva */
+        section:not(.active) {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ILCAVALIERE</h1>
+        <h2>Eccellenza nella ristorazione italiana</h2>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('menu')">Menu</a></li>
+            <li><a href="#" onclick="showSection('about')">Chi Siamo</a></li>
+            <li><a href="#" onclick="showSection('booking')">Prenota</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <!-- Sezione Home -->
+        <section id="home" class="active">
+            <h2>Benvenuti al Ristorante Il Cavaliere</h2>
+            <p>Scopri l'autentica cucina romana in un'atmosfera accogliente e familiare nel cuore del quartiere Parruense a Roma.</p>
+            <div class="divider"></div>
+            <h3>Le Nostre Specialità</h3>
+            <p>Pizza artigianale, antipasti della casa e piatti tradizionali preparati con ingredienti freschi e di qualità.</p>
+        </section>
+        
+        <!-- Sezione Menu -->
+        <section id="menu">
+            <h1>La Nostra Cucina</h1>
+            <h2>Cucina Romana</h2>
+            
+            <div class="menu-category">
+                <h3>Pizza Artigianale</h3>
+                <div class="menu-item">
+                    <p>Margherita - Pomodoro, mozzarella, basilico</p>
+                </div>
+                <div class="menu-item">
+                    <p>Diavola - Pomodoro, mozzarella, salame piccante</p>
+                </div>
+                <div class="menu-item">
+                    <p>Quattro Stagioni - Pomodoro, mozzarella, prosciutto, funghi, carciofi, olive</p>
+                </div>
+            </div>
+            
+            <div class="menu-category">
+                <h3>Antipasti della Casa</h3>
+                <div class="menu-item">
+                    <p>Bruschette miste - Pane casereccio con pomodoro, olive e paté</p>
+                </div>
+                <div class="menu-item">
+                    <p>Fritto misto - Olive ascolane, fiori di zucca, supplì</p>
+                </div>
+                <div class="menu-item">
+                    <p>Tagliere di salumi e formaggi - Selezione di prodotti tipici</p>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <h3>MENU COMPLETO DISPONIBILE IN LOCALE</h3>
+        </section>
+        
+        <!-- Sezione Chi Siamo -->
+        <section id="about">
+            <h1>Chi Siamo</h1>
+            <p>Benvenuti a Il Cavaliere, un ristorante a conduzione familiare che da anni rappresenta un punto di riferimento nel cuore del quartiere Parruense a Roma. La nostra missione è offrire un'esperienza culturale autentica, combinando la tradizione della cucina italiana con un'accoglienza calorosa e un ambiente conviviale.</p>
+            
+            <div class="divider"></div>
+            
+            <h3>La Nostra Storia</h3>
+            <p>Fondato nel 1995, Il Cavaliere nasce dalla passione per la cucina genuina e dall'amore per il territorio. Ogni giorno lavoriamo per mantenere vive le tradizioni culinarie romane, utilizzando solo ingredienti selezionati e di qualità.</p>
+        </section>
+        
+        <!-- Sezione Prenotazioni -->
+        <section id="booking">
+            <h1>Prenota un Tavolo</h1>
+            <h2>Vivi l'esperienza Il Cavaliere</h2>
+            
+            <form class="booking-form">
+                <div>
+                    <label for="name">Nome e Cognome</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div>
+                    <label for="phone">Telefono</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                
+                <div>
+                    <label for="date">Data</label>
+                    <input type="date" id="date" required>
+                </div>
+                
+                <div>
+                    <label for="time">Ora</label>
+                    <input type="time" id="time" required>
+                </div>
+                
+                <div>
+                    <label for="guests">Numero di Persone</label>
+                    <select id="guests" required>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 persone</option>
+                        <option value="3">3 persone</option>
+                        <option value="4">4 persone</option>
+                        <option value="5">5+ persone</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="notes">Note aggiuntive</label>
+                    <textarea id="notes" rows="4"></textarea>
+                </div>
+                
+                <button type="submit">Conferma Prenotazione</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>ILCAVALIERE - Ristorante Italiano</p>
+        <p>Via del Quartiere Parruense, 123 - Roma</p>
+        <p>Telefono: 06 1234567 - Email: info@ilcavaliere.it</p>
+        <p>&copy; 2023 Tutti i diritti riservati</p>
+    </footer>
+    
+    <script>
+        // Funzione per mostrare la sezione selezionata
+        function showSection(sectionId) {
+            // Nascondi tutte le sezioni
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Mostra la sezione selezionata
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

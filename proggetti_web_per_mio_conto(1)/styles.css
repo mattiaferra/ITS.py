@@ -1,0 +1,369 @@
+/* Reset e stili base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 0 30px; /* Aumentato da 20px */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 24px; /* Aumentato da 20px */
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar .logo img {
+  height: 40px;
+  margin-right: 12px; /* Aumentato da 10px */
+}
+
+/* Hero section */
+.hero {
+  background-image: url('img/cucina.png');
+  height: calc(100vh - 60px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-top: 60px;
+  padding: 40px 20px; /* Aggiunto padding */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 800px;
+  padding: 0 30px; /* Aumentato da 20px */
+}
+
+/* Miglioramento logo */
+.hero-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; /* Aumentato da 20px */
+  margin-bottom: 30px; /* Aumentato da 20px */
+  flex-wrap: wrap;
+}
+
+.hero-logo {
+  height: 110px; /* Aumentato da 100px */
+  width: auto;
+  filter: 
+    drop-shadow(0 0 5px rgba(255,255,255,0.5))
+    drop-shadow(0 0 3px rgba(0,0,0,0.7));
+}
+
+.hero h1 {
+  font-size: 3.2em; /* Aumentato leggermente */
+  margin-bottom: 25px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero button {
+  background-color: #d4ac0d;
+  border: none;
+  padding: 18px 36px; /* Aumentato */
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #a59343;
+}
+
+/* Sezione "La nostra cucina" */
+.sezione-cucina {
+  padding: 5rem 0; /* Aumentato da 4rem */
+  max-width: 1200px;
+  margin: 7rem auto; /* Aumentato da 6rem */
+}
+
+.intestazione-cucina {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Aumentato da 20px */
+  justify-content: center;
+  margin-bottom: 70px; /* Aumentato da 60px */
+  flex-wrap: wrap;
+}
+
+.intestazione-cucina h2 {
+  font-size: 64px; /* Aumentato da 60px */
+  color: #4b2e1e;
+}
+
+.img-tonda {
+  width: 185px;
+  height: 185px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem; /* Aumentato da 2rem */
+  justify-content: center;
+  padding: 0 30px; /* Aumentato da 20px */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 450px;
+  transition: transform 0.2s ease;
+  flex: 1 1 100px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 2rem; /* Aumentato da 1.5rem */
+  text-align: center;
+}
+
+.card-content h3 {
+  margin: 0;
+  color: #6b4029;
+  font-size: 1.5rem;
+}
+
+.card-content p {
+  margin-top: 10px;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* About Section */
+
+.about-section {
+  padding: 100px 30px;
+  margin-top: 200px; /* Aggiunto margine sopra */
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.about-image-container {
+  width: 55%; /* Aumentato da 50% */
+  max-width: 1000px;
+  margin: 0 auto 50px; /* Aumentato da 40px */
+  border: 15px solid white;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-image-container img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 30px; /* Aumentato da 20px */
+}
+
+.about-content h1 {
+  font-size: 3rem; /* Aumentato da 2.8rem */
+  color: #4b2e1e;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.about-content p {
+  font-size: 1.3rem;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 35px;
+}
+
+/* Sezione Prenotazioni */
+.booking-section {
+  background-color: #fcfcfc;
+  padding: 100px 30px; /* Aumentato da 80px 20px */
+  margin-top: 70px; /* Aumentato da 60px */
+  border-top: 2px solid #d5b894;
+}
+
+.booking-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px; /* Aumentato da 40px */
+  flex-wrap: wrap;
+}
+
+.booking-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.booking-text h2 {
+  font-size: 40px; /* Aumentato da 36px */
+  color: #4b2e1e;
+  margin-bottom: 20px;
+}
+
+.booking-text p {
+  font-size: 20px;
+  margin-bottom: 28px;
+  color: #333;
+}
+
+.btn-prenota {
+  display: inline-block;
+  padding: 14px 28px; /* Aumentato */
+  background-color: #f1c40f;
+  color: #4b2e1e;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-prenota:hover {
+  background-color: #d4ac0d;
+}
+
+.booking-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+
+
+.section-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.2em;
+  color: #4b2e1e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+hr.separator {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  width: 90%;
+  margin: 0 auto 30px auto;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-info {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.4em;
+  color: #555;
+  max-width: 400px;
+}
+
+.contact-info strong {
+  font-family: 'Pacifico', cursive;
+  color: #4b2e1e;
+  font-size: 1.6em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.map-placeholder {
+  width: 600px;
+  height: 400px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
