@@ -14,26 +14,26 @@
         <img src="img/creami un logo con un cavaliere con un cappello da chef e una cucchiarella in mano (1).png" alt="Logo Il Cavaliere" />
         Il Cavaliere
       </a>
-      <a href="#">Home</a>
-      <a href="#">Chi siamo</a>
-      <a href="#">Menu</a>
-      <a href="#">Contatti</a>
+      <a href="#" onclick="scrollToTop()">Home</a>
+      <a href="#chisiamo">Chi siamo</a>
+      <a href="#cucina">La Nostra Cucina</a>
+      <a href="#contatti">Contatti</a>
     </div>
   </header>
-
+  
   <div class="hero">
     <div class="hero-content">
       <div class="hero-title-container">
-        <img src="img/creami un logo con un cavaliere con un cappello da chef e una cucchiarella in mano (1).png" 
+        <img src="img/creami un logo con un cavaliere con un cappello da chef e una cucchiarella in mano (1).png " 
              alt="Logo Il Cavaliere" 
              class="hero-logo">
-        <h1>Benvenuti al ristorante Il Cavaliere</h1>
+        <h1 style="white-space: nowrap;">Benvenuti al ristorante Il Cavaliere</h1>
       </div>
       <button onclick="window.location.href='#menu'">Visita il nostro menu</button>
     </div>
   </div>
 
-  <section class="sezione-cucina">
+  <section class="sezione-cucina" id="cucina">
     <div class="intestazione-cucina">
       <img src="img/creami un logo con un cavaliere con un cappello da chef e una cucchiarella in mano (1).png" alt="Logo Cucina" class="img-tonda">
       <h2>La Nostra Cucina</h2>
@@ -64,7 +64,7 @@
         </div>
       </div>
     </div>
-<section class="about-section">
+<section class="about-section" id="chisiamo">
   <div class="about-image-container">
     <img src="img/interni.png" alt="Interno del ristorante">
   </div>
@@ -75,7 +75,7 @@
   </div>
 </section>
 
-  <section class="booking-section">
+  <section class="booking-section" id="prenotaora">
     <div class="booking-content">
       <div class="booking-text">
         <h2>Prenota ora un tavolo</h2>
@@ -92,7 +92,7 @@
 <hr class="separator">
 
 <div class="contact-container">
- <div class="contact-info">
+ <div class="contact-info" id="contatti">
   <img src="img/creami un logo con un cavaliere con un cappello da chef e una cucchiarella in mano (1).png" alt="Cav Logo" style="margin-bottom: 15px; max-width: 150px;">
   <strong>Il Cavaliere</strong>
   <p>Piazza Augusto Lorenzini, 11, 00149 Roma RM</p> 
@@ -116,8 +116,41 @@
   </div>
 </div>
 
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <img src="img/logo.png" alt="Il Cavaliere" class="footer-logo">
+      <p>Pizzeria Ristorante dal 1985</p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Orari</h3>
+      <p>Lun-Ven: 12:00-15:00 / 19:00-23:00</p>
+      <p>Sab-Dom: 12:00-15:30 / 19:00-23:30</p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Contatti</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Piazza Augusto Lorenzini, 11, Roma</p>
+      <p><i class="fas fa-phone"></i> 06 1234567</p>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2023 Il Cavaliere - P.IVA 12345678901</p>
+  </div>
+</footer>
 
-  <script>
+<script>
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    return false;
+  }
+
+  
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -130,6 +163,15 @@
 
     document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
   </script>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      return false; // Previene il comportamento default del link
+    }
+    </script>
 
 </body>
 </html>
