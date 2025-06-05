@@ -10,6 +10,9 @@
 
   <header>
     <div class="navbar">
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
       <a href="#" class="logo">
         <img src="img/creami un logo con un cavaliere con un cappello da chef e una cucchiarella in mano (1).png" alt="Logo Il Cavaliere" />
         Il Cavaliere
@@ -118,26 +121,47 @@
 
 <footer class="site-footer">
   <div class="footer-container">
+    <!-- Sezione Logo e Descrizione -->
     <div class="footer-section">
-      <img src="img/logo.png" alt="Il Cavaliere" class="footer-logo">
-      <p>Pizzeria Ristorante dal 1985</p>
+      <img src="img/logo-footer.png" alt="Ristorante Buongusto" class="footer-logo">
+      <p>Il Ristorante Buongusto offre un'esperienza culinaria unica con ingredienti freschi e ricette tradizionali rivisitate in chiave moderna.</p>
     </div>
-    
-    <div class="footer-section">
-      <h3>Orari</h3>
-      <p>Lun-Ven: 12:00-15:00 / 19:00-23:00</p>
-      <p>Sab-Dom: 12:00-15:30 / 19:00-23:30</p>
-    </div>
-    
+
+    <!-- Sezione Contatti -->
     <div class="footer-section">
       <h3>Contatti</h3>
-      <p><i class="fas fa-map-marker-alt"></i> Piazza Augusto Lorenzini, 11, Roma</p>
-      <p><i class="fas fa-phone"></i> 06 1234567</p>
+      <p><i class="fas fa-map-marker-alt"></i> Via del Gusto, 123 - 00100 Roma</p>
+      <p><i class="fas fa-phone"></i> +39 06 1234567</p>
+      <p><i class="fas fa-envelope"></i> info@buongusto.it</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+      </div>
+    </div>
+
+    <!-- Sezione Orari -->
+    <div class="footer-section">
+      <h3>Orari di Apertura</h3>
+      <p><strong>Lunedì - Venerdì:</strong> 12:00 - 15:00 / 19:00 - 23:00</p>
+      <p><strong>Sabato:</strong> 12:00 - 15:30 / 19:00 - 24:00</p>
+      <p><strong>Domenica:</strong> 12:00 - 15:30 / 19:00 - 23:00</p>
+    </div>
+
+    <!-- Sezione Newsletter -->
+    <div class="footer-section">
+      <h3>Newsletter</h3>
+      <p>Iscriviti per ricevere promozioni e novità</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="La tua email" required>
+        <button type="submit">Iscriviti</button>
+      </form>
     </div>
   </div>
-  
+
+  <!-- Footer Bottom -->
   <div class="footer-bottom">
-    <p>&copy; 2023 Il Cavaliere - P.IVA 12345678901</p>
+    <p>&copy; 2023 Ristorante Buongusto. Tutti i diritti riservati. | P.IVA 12345678901</p>
   </div>
 </footer>
 
@@ -171,6 +195,12 @@
       });
       return false; // Previene il comportamento default del link
     }
+
+
+    function toggleMenu() {
+    document.querySelector('.navbar').classList.toggle('active');
+    }
+
     </script>
 
 </body>
