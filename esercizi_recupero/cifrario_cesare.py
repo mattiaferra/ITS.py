@@ -77,8 +77,8 @@ def caesar_cypher_decrypt(s, key):
 
               
               
-lettere_chiave = caesar_cypher_encrypt("ciao",2)
-lettere_chiave2 = caesar_cypher_decrypt(lettere_chiave,2)
+lettere_chiave = caesar_cypher_encrypt("ciao come stai",22)
+lettere_chiave2 = caesar_cypher_decrypt(lettere_chiave,22)
 print(lettere_chiave)
 print(lettere_chiave2)
         

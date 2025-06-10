@@ -24,6 +24,11 @@ def ricerca_binaria(num_cercato, lista):
 
 
      return False
+
+
+
+test = ricerca_binaria(7,[1,7,8,9,10,12])
+print(test)
                
 
        
