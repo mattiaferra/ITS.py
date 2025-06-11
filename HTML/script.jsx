@@ -10,7 +10,7 @@ const App= (props)=>{
     return(
         <main ClassName="main">
             <h1>Primo Componente</h1>
-            
+            {props.children}
         </main>
     )
 }
@@ -24,7 +24,7 @@ const List=()=>{
         </ul>
     )
 }
-é
+
 root.render(
 
 <>
