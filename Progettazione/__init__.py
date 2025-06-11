@@ -6,7 +6,7 @@ class Studente:
 
     matricola : int
     nome : str
-    genere : Genere.mytypes
+    #genere.mytypes
 
 
 # Importiamo tutto dal modulo 'enum' della libreria standard di Python.
