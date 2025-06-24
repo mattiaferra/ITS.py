@@ -30,19 +30,21 @@ class Creatura :
 
 
 class Alieno(Creatura):
+    _matricola:int
 
     def __init__(self, nome,):
+        
 
         self.__setMatricola()
         self.__setMunizioni()
 
-        nome = f"Robot-{self._matricola}"
+        self.nome = f"Robot-{self._matricola}"
 
         super().__init__(nome)
 
-        if not self.getNome().startswith("Robot-") or not self.getNome()[6:].isdigit():
-            print("Attenzione! Tutti gli Alieni devono avere il nome \"Robot\" seguito dal numero di matricola! Reimpostazione nome Alieno in Corso!")
-            self.setNome(nome)
+        if nome != f"Robot-{self._matricola}":
+            print("Attenzione! Tutti gli Alieni devono avere il nome 'Robot' seguito dal numero di matricola! Reimpostazione nome Alieno in Corso!")
+
 
     def __setMatricola(self):
 
