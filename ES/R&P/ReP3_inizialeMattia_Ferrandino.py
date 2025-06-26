@@ -67,7 +67,7 @@ class Alieno(Creatura):
 
     def __str__(self):
 
-        return f"Alieno: {self.getNome()}\n Munizioni : {self._munizioni}"                                 
+        return f"Alieno: {self.getNome()}\nMunizioni : {self._munizioni}"                                 
     
 
 
@@ -124,7 +124,7 @@ class Mostro(Creatura):
                 nome_char_alternato += nome_mostro[idx].lower()
 
 
-        return f"Mostro : {nome_char_alternato} \n Assalto : {self._assalto}"
+        return f"Mostro : {nome_char_alternato}\nAssalto : {self._assalto}"
 
             
 
@@ -166,24 +166,20 @@ def combattimento(a:Alieno,m:Mostro):
     else:
         print(m.gemito_sconfitta)
         return a
+
+
+#def proclamaVincitore(c:Creatura):
     
-    
-def proclamaVincitore(c: Creatura):
-    vincitore = "Alieni" if isinstance(c, Alieno) else "Mostri"
-    nome = c.getNome()
-    testo = f"Ha vinto la fazione dei {vincitore}!\nVincitore: {nome}"
-    bordi = "*" * (len(max(testo.splitlines(), key=len)) + 4)
-    print(bordi)
-    for riga in testo.splitlines():
-        print(f"* {riga.ljust(len(bordi) - 4)} *")
-    print(bordi)
 
 
-# Esempio di utilizzo
-if __name__ == "__main__":
-    alieno = Alieno("Robot-12345")  # nome non corretto, verrà reimpostato
-    mostro = Mostro("Godzilla", "", "")  # urlo e gemito non validi, verranno reimpostati
 
-    vincitore = combattimento(alieno, mostro)
-    if vincitore:
-        proclamaVincitore(vincitore)
+
+
+alieno = Alieno("Robot-12345")
+mostro = Mostro("Zargon", "", "")
+
+descrizione1 = alieno.__str__()
+descrizione2 = mostro.__str__()
+
+print(f"{descrizione1}\n")
+print(descrizione2)
