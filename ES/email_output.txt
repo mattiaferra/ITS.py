@@ -1,0 +1,3 @@
+Da: alice@example.com,  A: bob@example.com
+Oggetto: Incontro
+Corpo: Ciao Bob, possiamo incontrarci domani?
