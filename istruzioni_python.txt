@@ -1,0 +1,4 @@
+Per eseguire uno script python example.py che si trova in PYTHON/lezionex
+
+docker exec -it -w /home/PYTHON/lezionex its_dev python example.py
+
