@@ -6,18 +6,29 @@ import EsempioUseEffect from './EsempioUseEffect';
 import Contatore from './Contatore';
 import Stampanumeri from './Esercizi/Stampa_numeri';
 import Tabellinacinque from './Esercizi/Tabellinacinque';
+import CambiaNome from './Esercizi/CambiaNome';
+import LoginForm from './Esercizi/LoginForm';
 import { anagrafica } from "./data/dati";
+import FetchComponent from './FetchComponent';
 
 
 
 function App() {
   const [nome1, setNome1] = useState("nome");
   const [persone, setPersone] = useState(anagrafica);
-
+/*
   const cambiaNome = () => {
     const nuovoNome = "Mario";
     setNome1(nuovoNome);
-  };
+  };*/
+
+
+  const cambiaNome = () => {
+    const nuovoNome = "Mattia";
+    setNome1(nuovoNome);
+  }
+
+
 
   const cliccami = (nome, cognome) => {
     alert("Ciao " + nome + " " + cognome);
@@ -65,7 +76,9 @@ function App() {
       <Clock timezone="6" country="USA" />
       <Clock timezone="8" country="Japan" />
       */}
-
+      <FetchComponent></FetchComponent>
+      <LoginForm></LoginForm>
+      <CambiaNome></CambiaNome>
       <EsempioUseEffect></EsempioUseEffect>
       <Contatore></Contatore>
 
