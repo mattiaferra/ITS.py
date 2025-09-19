@@ -49,21 +49,11 @@ class Fattura :
 
         print(f"Alla lista del Dottor {cognome_dott} è stato aggiunto il paziente {codice_paziente}")
     
-    def removePatient(self, idCode):
-        # Trova il paziente con l'idCode nella lista
-        paziente_da_rimuovere = None
-        for paziente in self.patient:
-            if paziente.getIdCode() == idCode:
-                paziente_da_rimuovere = paziente
-                break
 
-        if paziente_da_rimuovere:
-            self.patient.remove(paziente_da_rimuovere)
-            self.getFatture()
-            self.getSalary()
+    def removePatient(self,idCode):
 
-            cognome_dott = self.doctor.getLastName()
-            print(f"Alla lista del Dottor {cognome_dott} è stato rimosso il paziente {idCode}")
-        else:
-            print(f"Nessun paziente con ID {idCode} trovato nella lista del Dottor {self.doctor.getLastName()}")
+        self.patient.remove(idCode)
+        self.getFatture()
+        self.getSalary()
 
+        print(f"Alla lista del Dottor {self.doctor.getLastName()} è stato rimosso il paziente {idCode}")
