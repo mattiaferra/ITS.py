@@ -4,6 +4,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import UserCrud from './user-crud-analist/UserCrud'
 import Saluto from './Saluto'
+import TodoApp from './todo/TodoApp'
+import TodoForm from './todo/TodoForm'
+import TodoItem from './todo/TodoItem'
+import TodoList from './todo/TodoList'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -34,6 +38,10 @@ function App() {
       <UserCrud></UserCrud>
       */}
       <Saluto></Saluto>
+      <TodoApp></TodoApp>
+      <TodoForm></TodoForm>
+      <TodoItem></TodoItem>
+      <TodoList></TodoList>
     </>
   )
 }
