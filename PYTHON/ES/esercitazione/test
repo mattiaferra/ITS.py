@@ -1,0 +1,14 @@
+def letter_count(text: str) -> dict[str,int]:
+    
+    new_dict = {}
+    contatore = 0
+
+    for lettera in text : 
+         if 'a' <= lettera <= 'z' and lettera in new_dict:
+
+            contatore += 1
+            
+            new_dict[lettera]= contatore
+
+
+    return new_dict 
