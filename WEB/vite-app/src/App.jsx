@@ -2,12 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import UserCrud from './user-crud-analist/UserCrud'
-import Saluto from './Saluto'
-import TodoApp from './todo/TodoApp'
-import TodoForm from './todo/TodoForm'
-import TodoItem from './todo/TodoItem'
-import TodoList from './todo/TodoList'
+import ProvaRoutes from './routes/ProvaRoutes'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -37,11 +32,12 @@ function App() {
       </p>
       <UserCrud></UserCrud>
       */}
-      <Saluto></Saluto>
-      <TodoApp></TodoApp>
+      {/* <Saluto></Saluto> */}
+      {/* <TodoApp></TodoApp>
       <TodoForm></TodoForm>
       <TodoItem></TodoItem>
-      <TodoList></TodoList>
+      <TodoList></TodoList> */}
+      <ProvaRoutes></ProvaRoutes>
     </>
   )
 }
