@@ -15,7 +15,8 @@ class TaskManager:
         
 
 
-    def complete_task(self, task_id : str ):
+    def complete_task(s
+    elf, task_id : str ):
 
         if task_id in self.tasks: 
             self.tasks[task_id]["completato"] = True
