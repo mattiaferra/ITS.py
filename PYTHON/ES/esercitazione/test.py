@@ -1,4 +1,4 @@
-class Movie:
+'''class Movie:
     def __init__(self,movie_id: str,title: str,director: str,is_rented: bool):
 
         self.movie_id = movie_id
@@ -101,12 +101,23 @@ class VideoRentalStore:
             print("Cliente non trovato.")
             return []
 
+'''
 
+import math
+def ordina_lista_crescente (lista : list [int]) -> list:
 
+    nuova_lista = []
 
-
-
-
-
-
+    while lista:
+        min = math.inf
     
+
+        for numero in lista:
+            if numero < min :
+                min = numero
+
+                
+        nuova_lista.append(min)
+        lista.remove(min)
+
+    return nuova_lista
